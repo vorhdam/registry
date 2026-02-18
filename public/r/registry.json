@@ -44,13 +44,13 @@
       "type": "registry:block",
       "author": "vorhdam",
       "title": "Phone",
-      "description": "A simple component that allows you to collect phone numbers.",
+      "description": "A simple input component that allows you to collect phone numbers.",
       "dependencies": ["libphonenumber-js"],
       "registryDependencies": [
         "input-group",
         "popover",
         "command",
-        "http://localhost:3000/r/flag.json"
+        "https://vorhdam-registry.vercel.app/r/flag.json"
       ],
       "files": [
         {
