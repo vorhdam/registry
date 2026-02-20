@@ -1,29 +1,28 @@
 {
-    "[prisma]": {
-      "editor.defaultFormatter": "Prisma.prisma"
-    },
-    "typescript.tsdk": "node_modules\\typescript\\lib",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "always"
-    },
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "material-icon-theme.activeIconPack": "react",
-    "material-icon-theme.folders.associations": {
-      "(auth)": "secure",
-      "(dashboard)": "client",
-      "account": "admin",
-      "blocks": "container",
-      "buttons": "guard",
-      "files": "images",
-      "[locale]": "global",
-      "bucket": "resolver",
-      "redis": "class",
-      "ratelimit": "update",
-      "socket": "trigger"
-    }
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.associations": {
+    "(auth)": "secure",
+    "(dashboard)": "client",
+    "account": "admin",
+    "blocks": "container",
+    "buttons": "guard",
+    "files": "images",
+    "[locale]": "global",
+    "bucket": "resolver",
+    "redis": "class",
+    "ratelimit": "update",
+    "socket": "trigger"
   }
-  
+}

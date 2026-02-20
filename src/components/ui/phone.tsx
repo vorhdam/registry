@@ -1,5 +1,7 @@
 "use client";
 
+import * as React from "react";
+
 import {
   Command,
   CommandEmpty,
@@ -20,7 +22,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import countryNames from "@/lib/countries.json";
+import { countryNames } from "@/lib/phone/countries";
 import { cn } from "@/lib/utils";
 import parsePhoneNumberFromString, {
   CountryCode,
@@ -28,7 +30,6 @@ import parsePhoneNumberFromString, {
   getCountries,
   getCountryCallingCode,
 } from "libphonenumber-js";
-import * as React from "react";
 
 const codes: CountryCode[] = getCountries();
 

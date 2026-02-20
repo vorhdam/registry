@@ -1,7 +1,7 @@
 "use client";
 
-import { useFlag } from "@/hooks/useFlag";
-import { type FlagCode } from "@/lib/flags";
+import { useFlag } from "@/hooks/use-flag";
+import { type FlagCode } from "@/lib/flag/flags";
 
 export type FlagProps = React.SVGProps<SVGSVGElement> & {
   code: FlagCode;

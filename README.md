@@ -31,3 +31,11 @@ Usage guide and more detailed documentation [here](https://github.com/vorhdam/re
 Usage guide and more detailed documentation [here](https://github.com/vorhdam/registry/blob/main/public/docs/phone.md)
 
 `bunx --bun shadcn@latest add https://vorhdam-registry.vercel.app/r/phone.json`
+
+### File
+
+**A simple file input component that is reusable and customizable.**
+
+Usage guide and more detailed documentation [here](https://github.com/vorhdam/registry/blob/main/public/docs/file.md)
+
+`bunx --bun shadcn@latest add https://vorhdam-registry.vercel.app/r/file.json`

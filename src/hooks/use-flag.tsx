@@ -1,4 +1,4 @@
-import { FlagCode } from "@/lib/flags";
+import { FlagCode } from "@/lib/flag/flags";
 import React from "react";
 
 const flagMap: Record<FlagCode, React.FC<React.SVGProps<SVGSVGElement>>> = {

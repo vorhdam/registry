@@ -30,11 +30,12 @@
           "type": "registry:ui"
         },
         {
-          "path": "src/lib/flags.ts",
-          "type": "registry:lib"
+          "path": "src/lib/flag/flags.ts",
+          "type": "registry:lib",
+          "target": "@/lib/flag/flags.ts"
         },
         {
-          "path": "src/hooks/useFlag.tsx",
+          "path": "src/hooks/use-flag.tsx",
           "type": "registry:hook"
         }
       ]
@@ -58,8 +59,9 @@
           "type": "registry:ui"
         },
         {
-          "path": "src/lib/countries.json",
-          "type": "registry:lib"
+          "path": "src/lib/phone/countries.ts",
+          "type": "registry:lib",
+          "target": "@/lib/phone/countries.ts"
         }
       ],
       "css": {
@@ -78,6 +80,38 @@
           }
         }
       }
+    },
+    {
+      "name": "file",
+      "type": "registry:block",
+      "author": "vorhdam",
+      "title": "File",
+      "description": "A simple file input component that is reusable and customizable.",
+      "files": [
+        {
+          "path": "src/components/ui/file.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/lib/file/definitions.ts",
+          "type": "registry:lib",
+          "target": "@/lib/file/definitions.ts"
+        },
+        {
+          "path": "src/lib/file/messages.ts",
+          "type": "registry:lib",
+          "target": "@/lib/file/messages.ts"
+        },
+        {
+          "path": "src/lib/file/workflow.ts",
+          "type": "registry:lib",
+          "target": "@/lib/file/workflow.ts"
+        },
+        {
+          "path": "src/hooks/use-files.tsx",
+          "type": "registry:hook"
+        }
+      ]
     }
   ]
 }
