@@ -2,6 +2,9 @@
 
 import * as React from "react";
 
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
 import useFileContext from "@/hooks/use-files";
 import {
   DefaultFileContext,
@@ -14,9 +17,6 @@ import { messages } from "@/lib/file/messages";
 import { workflow } from "@/lib/file/workflow";
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
-import { Alert, AlertDescription } from "./alert";
-import { Button } from "./button";
-import { Progress } from "./progress";
 
 const contextMap = new Map<string, React.Context<FileContext>>();
 

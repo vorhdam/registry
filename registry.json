@@ -87,6 +87,8 @@
       "author": "vorhdam",
       "title": "File",
       "description": "A simple file input component that is reusable and customizable.",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert", "button", "progress"],
       "files": [
         {
           "path": "src/components/ui/file.tsx",
