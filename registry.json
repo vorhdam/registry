@@ -31,8 +31,7 @@
         },
         {
           "path": "src/lib/flag/flags.ts",
-          "type": "registry:lib",
-          "target": "@/lib/flag/flags.ts"
+          "type": "registry:lib"
         },
         {
           "path": "src/hooks/use-flag.tsx",
@@ -60,8 +59,7 @@
         },
         {
           "path": "src/lib/phone/countries.ts",
-          "type": "registry:lib",
-          "target": "@/lib/phone/countries.ts"
+          "type": "registry:lib"
         }
       ],
       "css": {
@@ -96,18 +94,15 @@
         },
         {
           "path": "src/lib/file/definitions.ts",
-          "type": "registry:lib",
-          "target": "@/lib/file/definitions.ts"
+          "type": "registry:lib"
         },
         {
           "path": "src/lib/file/messages.ts",
-          "type": "registry:lib",
-          "target": "@/lib/file/messages.ts"
+          "type": "registry:lib"
         },
         {
           "path": "src/lib/file/workflow.ts",
-          "type": "registry:lib",
-          "target": "@/lib/file/workflow.ts"
+          "type": "registry:lib"
         },
         {
           "path": "src/hooks/use-files.tsx",
