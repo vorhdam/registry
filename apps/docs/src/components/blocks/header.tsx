@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Logo } from "@/components/blocks/logo";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,10 +15,11 @@ import {
   SelectItem,
   SelectTrigger,
 } from "@/components/ui/select";
+import { useColor } from "@nordaun/color";
+import { useTheme } from "@nordaun/theme";
 import { config } from "@repo/config";
 import { Moon, Sun } from "lucide-react";
-import { useTheme } from "@nordaun/theme";
-import { useColor } from "@nordaun/color";
+import Link from "next/link";
 
 export function Header() {
   const { theme, setTheme } = useTheme();
@@ -74,7 +74,7 @@ export function Header() {
           <SelectTrigger className="flex justify-center items-center h-10 hover:bg-muted dark:hover:bg-muted/50 rounded-full cursor-pointer">
             <div className="flex flex-row items-center gap-2">
               <div className="bg-primary size-3 rounded-full" />
-              <span>Select a theme</span>
+              <span>Select a color</span>
             </div>
           </SelectTrigger>
           <SelectContent className="p-1">

@@ -1,6 +1,14 @@
 {
   "name": "@nordaun/color",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A simple color provider and context for your React apps.",
+  "homepage": "https://ui.nordaun.com/packages/color",
+  "author": "vorhdam <https://github.com/vorhdam>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nordaun/ui.git"
+  },
   "type": "module",
   "exports": {
     ".": "./src/index.tsx"
@@ -8,6 +16,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
