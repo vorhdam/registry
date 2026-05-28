@@ -181,6 +181,10 @@
         {
           "path": "src/components/ui/video.tsx",
           "type": "registry:ui"
+        },
+        {
+          "path": "src/hooks/use-mobile.ts",
+          "type": "registry:hook"
         }
       ]
     }
