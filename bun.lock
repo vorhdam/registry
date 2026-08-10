@@ -94,6 +94,10 @@
         "typescript-eslint": "^8.50.0",
       },
     },
+    "packages/flags": {
+      "name": "@nordaun/flags",
+      "version": "1.0.0",
+    },
     "packages/theme": {
       "name": "@nordaun/theme",
       "version": "1.0.0",
@@ -456,6 +460,8 @@
     "@nolyfill/is-core-module": ["@nolyfill/is-core-module@1.0.39", "", {}, "sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA=="],
 
     "@nordaun/color": ["@nordaun/color@workspace:packages/color"],
+
+    "@nordaun/flags": ["@nordaun/flags@workspace:packages/flags"],
 
     "@nordaun/theme": ["@nordaun/theme@workspace:packages/theme"],
 

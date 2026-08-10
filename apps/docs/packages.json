@@ -9,6 +9,11 @@
       "name": "color",
       "title": "Color",
       "description": "A simple color provider for any React or Next.js application to enable you view your components the way you like."
+    },
+    {
+      "name": "flags",
+      "title": "Flags",
+      "description": "A simple flag library that stores more than 200 assets and can be accessed through the JSDelivr CDN for fast loading."
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "@nordaun/flags",
+  "version": "1.0.0",
+  "description": "A simple flags content delivery package.",
+  "homepage": "https://ui.nordaun.com/packages/flags",
+  "author": "vorhdam <https://github.com/vorhdam>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nordaun/ui.git"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "flags/"
+  ]
+}

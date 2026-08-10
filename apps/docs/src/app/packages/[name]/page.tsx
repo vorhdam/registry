@@ -1,13 +1,12 @@
 import { promises as fs } from "fs";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import path from "path";
 
 import { CodeBlock } from "@/components/blocks/code";
 import { Installation } from "@/components/blocks/intallation";
-import { config } from "@repo/config";
 import registry from "@/packages";
+import { config } from "@repo/config";
 
 type PageProps = {
   params: { name: string };
@@ -59,7 +58,9 @@ export default async function ComponentPage({ params }: PageProps) {
     `${component.name}.tsx`,
   );
   const fileContent = await fs.readFile(filePath, "utf8");
-  const providerMatch = fileContent.match(/\/\/ START_PROVIDER([\s\S]*?)\/\/ END_PROVIDER/);
+  const providerMatch = fileContent.match(
+    /\/\/ START_PROVIDER([\s\S]*?)\/\/ END_PROVIDER/,
+  );
   const hookMatch = fileContent.match(/\/\/ START_HOOK([\s\S]*?)\/\/ END_HOOK/);
   const providerCode = providerMatch ? providerMatch[1]?.trim() : "";
   const hookCode = hookMatch ? hookMatch[1]?.trim() : "";
@@ -74,7 +75,7 @@ export default async function ComponentPage({ params }: PageProps) {
       </div>
       <div className="flex flex-col gap-3">
         <h2 className="text-xl font-semibold">Installation</h2>
-        <Installation name={component.name} type="package"/>
+        <Installation name={component.name} type="package" />
       </div>
       <h2 className="text-xl font-semibold">Usage</h2>
       <div className="flex flex-col gap-3">
@@ -86,10 +87,7 @@ export default async function ComponentPage({ params }: PageProps) {
       </div>
       <div className="flex flex-col gap-3">
         <h2 className="text-xl font-semibold">Hook</h2>
-        <CodeBlock
-          directory={`/hooks/${component.name}.tsx`}
-          code={hookCode}
-        />
+        <CodeBlock directory={`/hooks/${component.name}.tsx`} code={hookCode} />
       </div>
     </div>
   );

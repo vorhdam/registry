@@ -7,7 +7,7 @@ export default function FlagDemo() {
       <Flag code="HU" className="size-16" />
       <Flag code="GB" className="size-16" />
       <Flag code="DE" className="size-16" />
-      <Flag code="ES" className="size-16" />
+      <Flag code="NO" className="size-16" />
     </div>
   );
 }
