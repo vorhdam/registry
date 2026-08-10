@@ -33,9 +33,20 @@ import { cn } from "@/lib/utils";
 
 const codes: CountryCode[] = getCountries();
 
-type PhoneProps = React.ComponentProps<"input"> & { value?: string };
+type PhoneProps = React.ComponentProps<"input"> & {
+  value?: string;
+  searchPlaceholder: string;
+  emptyPlaceholder: string;
+};
 
-function Phone({ value, onChange, placeholder, ...props }: PhoneProps) {
+function Phone({
+  value,
+  onChange,
+  placeholder,
+  searchPlaceholder,
+  emptyPlaceholder,
+  ...props
+}: PhoneProps) {
   const countries = React.useMemo(
     () =>
       [...codes].sort((a, b) => {
@@ -81,7 +92,13 @@ function Phone({ value, onChange, placeholder, ...props }: PhoneProps) {
   return (
     <>
       <InputGroup className={cn(className)}>
-        <InputGroupAddon align="inline-start" className="pl-1 my-0">
+        <InputGroupAddon
+          align="inline-start"
+          className="pl-1 my-0"
+          onClick={(e) => {
+            if (!e.currentTarget.contains(e.target as Node)) return;
+          }}
+        >
           <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger
               aria-expanded={open}
@@ -94,9 +111,9 @@ function Phone({ value, onChange, placeholder, ...props }: PhoneProps) {
             </PopoverTrigger>
             <PopoverContent className="w-[320px] p-0" align="start">
               <Command>
-                <CommandInput placeholder={placeholder} />
+                <CommandInput placeholder={searchPlaceholder} />
                 <CommandList className="mt-1">
-                  <CommandEmpty>{placeholder}</CommandEmpty>
+                  <CommandEmpty>{emptyPlaceholder}</CommandEmpty>
                   <CommandGroup>
                     {countries.map((countryCode) => (
                       <CommandItem
